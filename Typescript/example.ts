@@ -43,7 +43,7 @@ const requestParams: URLSearchParams = new URLSearchParams({
 	code_challenge: codeChallenge,
 	redirect_uri: redirectUri
 });
-document.location = `https://login.daisycon.com.local/oauth/authorize?${requestParams.toString()}`;
+document.location = `https://login.daisycon.com/oauth/authorize?${requestParams.toString()}`;
 
 async function generateCodeChallenge(codeVerifier): string {
 	let digest: ArrayBuffer = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(codeVerifier));
