@@ -25,3 +25,18 @@ php PHP/cli-client.php --clientId CLIENT_ID --clientSecret CLIENT_SECRET --outpu
 ```
 
 You can then use the tokens in your code and refresh them using your own code
+
+# PowerShell
+
+This is a small example for making an api call using OAuth in PowerShell.
+
+```
+Install-module -name PKCE
+Install-Module -name JWTDetails
+Add-Type -AssemblyName System.Web
+```
+
+Usage: 
+```
+.\PowerShell\example.ps1
+```
