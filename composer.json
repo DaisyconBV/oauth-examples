@@ -1,0 +1,7 @@
+{
+	"name": "daisyconbv/oauth-examples",
+	"description": "A list of Daisycon oAuth examples.",
+	"require": {
+		"php": ">=7.4"
+	}
+}
